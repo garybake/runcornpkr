@@ -1,6 +1,6 @@
-"games": [
+{"games": [
     {
-        "gameid": 003,
+        "gameid": 3,
         "date": "20140531",
         "players": [
             {"position": 1,"name": "Steve J"},
@@ -12,7 +12,7 @@
         ]
     },
     {
-        "gameid": 002,
+        "gameid": 2,
         "date": "20140324",
         "players": [
             {"position": 1,"name": "Steve J"},
@@ -26,7 +26,7 @@
         ]
     },
         {
-        "gameid": 001,
+        "gameid": 1,
         "date": "20140201",
         "players": [
             {"position": 1,"name": "Steve J"},
@@ -36,4 +36,4 @@
             {"position": 5,"name": "Gary B"}
         ]
     }
-]
+]}

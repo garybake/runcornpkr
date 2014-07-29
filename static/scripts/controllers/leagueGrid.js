@@ -1,57 +1,22 @@
 (function(){
 
 angular.module('pkr')
-  .controller('LeagueGridController', function ($scope) {
-      var games = [
-          {
-              gameid: 3,
-              date: "20140531",
-              players: [
-                  {position: 1,"name": "Steve J"},
-                  {position: 2,"name": "Darren B"},
-                  {position: 3,"name": "Stacey R"},
-                  {position: 4,"name": "Darren R"},
-                  {position: 5,"name": "Gary B"},
-                  {position: 6,"name": "Nathan B"}
-              ]
-          },
-          {
-              gameid: 2,
-              date: "20140324",
-              players: [
-                  {position: 1,"name": "Steve J"},
-                  {position: 2,"name": "Gary B"},
-                  {position: 3,"name": "Darren B"},
-                  {position: 4,"name": "Neil P"},
-                  {position: 5,"name": "Darren R"},
-                  {position: 6,"name": "Frank R"},
-                  {position: 7,"name": "Daniel R"},
-                  {position: 8,"name": "Nathan B"}
-              ]
-          },
-          {
-              gameid: 1,
-              date: "20140201",
-              players: [
-                  {position: 1,"name": "Steve J"},
-                  {position: 2,"name": "Darren B"},
-                  {position: 3,"name": "Darren R"},
-                  {position: 4,"name": "Neil P"},
-                  {position: 5,"name": "Gary B"}
-              ]
-          }
-      ];
+  .controller('LeagueGridController', function ($scope, gamesService) {
+      var me = this;
 
-      this.picked = 3;
+      me.picked = 3;
 
-      this.games = games;
+      me.games = [];
+      gamesService.getData(function(dataResponse) {
+          me.games = dataResponse.games;
+      });
 
-      this.getImage = function(name){
+      me.getImage = function(name){
           var file = name.replace(/\s+/g, '').toLowerCase();
           return '/resources/images/' + file + '.jpg';
       };
 
-      this.formatDate = function(str) {
+      me.formatDate = function(str) {
           var y = str.substr(0,4),
               m = str.substr(4,2) - 1,
               d = str.substr(6,2);
@@ -59,11 +24,11 @@ angular.module('pkr')
           return (D.getFullYear() == y && D.getMonth() == m && D.getDate() == d) ? D : 'invalid date';
       };
 
-      this.selectAction = function(setTab){
+      me.selectAction = function(setTab){
           this.picked = setTab;
       };
 
-      this.isSelected = function(checkTab){
+      me.isSelected = function(checkTab){
           return this.picked == checkTab;
       };
   });
