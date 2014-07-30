@@ -1,10 +1,21 @@
 (function(){
-    var app = angular.module('pkr', []);
 
+    function config($routeProvider){
+        $routeProvider
+      .when('/placeList/:game', {
+        templateUrl: './views/placeList.html',
+        controller: 'PlaceListController',
+        controllerAs: 'placeList'
+      })
+      .otherwise({
+        redirectTo: '/placeList/'
+      });
+    }
 
-    // app.controller('grdController', function($scope){
-    //
-    //
-    // });
+    angular
+        .module('pkr', [
+            'ngRoute'
+        ])
+        .config(config);
 
 })();
