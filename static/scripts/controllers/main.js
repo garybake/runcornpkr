@@ -1,7 +1,7 @@
 (function(){
 
 angular.module('pkr')
-  .controller('LeagueGridController', function ($scope, gamesService) {
+  .controller('MainController', function ($scope, gamesService) {
       var me = this;
 
       this.picked = 3;
@@ -10,11 +10,6 @@ angular.module('pkr')
       gamesService.getData(function(dataResponse) {
           me.games = dataResponse.games;
       });
-
-      this.getImage = function(name){
-          var file = name.replace(/\s+/g, '').toLowerCase();
-          return '/resources/images/' + file + '.jpg';
-      };
 
       this.formatDate = function(str) {
           var y = str.substr(0,4),

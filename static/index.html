@@ -10,38 +10,15 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
   </head>
   <body ng-app="pkr">
-    <div ng-controller="LeagueGridController as grd">
+    <div ng-controller="MainController as main">
 
         <p>
             <h4 style="display: inline-block; color: white;">
-                <img height="32" width="32" ng-src="/resources/images/coinsphere.png") style:"vertical-align: middle;" }/>
+                <img height="32" width="32" ng-src="./resources/images/coinsphere.png") style:"vertical-align: middle;" }/>
                 Runcorn Poker League
             </h4>
         </p>
-        <div class="panel panel-default panel-primary">
-          <!-- Default panel contents -->
-            <div class="panel-heading">
-                <select class="form-control" id="select" ng-model="grd.picked" ng-change="grd.selectAction(grd.picked)">
-                    <option ng-repeat="game in grd.games" | orderBy:'game.date'
-                        value="{{game.gameid}}">{{grd.formatDate(game.date) | date:fullDate}}</option>
-                </select>
-            </div>
-            <div class="panel-body">
-            </div>
 
-            <!-- Table -->
-            <table class="table" ng-repeat="game in grd.games" ng-show="grd.isSelected(game.gameid)">
-            <tr ng-repeat="player in game.players">
-                <td class="col-md-2">{{$index + 1}}</td>
-                <td class="col-md-4">
-                    <a class="circle">
-                        <img height="32" width="32" ng-src="{{grd.getImage(player.name)}}" alt="face"/>
-                    </a>
-                </td>
-                <td class="col-md-6">{{player.name}}</td>
-            </tr>
-            </table>
-        </div>
     </div>
     <div ng-view>
 
@@ -50,7 +27,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.19/angular-route.min.js"></script>
     <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/leagueGrid.js"></script>
+    <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/placeList.js"></script>
     <script src="scripts/services/gamesservice.js"></script>
   </body>

@@ -8,7 +8,7 @@
         controllerAs: 'placeList'
       })
       .otherwise({
-        redirectTo: '/placeList/'
+        redirectTo: '/placeList/0'
       });
     }
 
