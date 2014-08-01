@@ -2,24 +2,25 @@
     <div class="panel panel-default panel-primary">
       <!-- Default panel contents -->
         <div class="panel-heading">
-            <!-- <div class="btn-group"> -->
-                <button type="button" class="btn btn-primary btn-lg" ng-click="placeList.clickLeft()">
+            <span>
+            <div ng-hide="placeList.isLeague()">{{placeList.formatDate(placeList.game.date) | date:fullDate}}</div>
+            <div ng-show="placeList.isLeague()">League 2014</div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary btn-lg" ng-click="placeList.clickLeft()" ng-disabled="placeList.disableLeft()">
                   <span class="glyphicon glyphicon glyphicon-arrow-left"></span>
                 </button>
-                <button type="button" class="btn btn-primary btn-lg" ng-click="placeList.clickRight()">
+                <button type="button" class="btn btn-primary btn-lg" ng-click="placeList.clickRight()" ng-disabled="placeList.disableRight()">
                   <span class="glyphicon glyphicon glyphicon-arrow-right"></span>
                 </button>
-            <!-- </div> -->
-            {{placeList.formatDate(placeList.game.date) | date:fullDate}}
-            <!-- <p ng-show="placeList.isLeague(placeList.game)">League 2014</p>
-            <p ng-show="true">League xxx</p> -->
+            </div>
+        </span>
         </div>
         <div class="panel-body">
         </div>
 
         <!-- Table -->
         <table class="table">
-        <tr ng-repeat="player in placeList.game.players">
+        <tr ng-repeat="player in placeList.game.players" >
             <!-- <td class="col-md-2">{{$index + 1}}</td> -->
             <td class="col-md-4" style="text-align:center">{{player.points}}</td>
             <td class="col-md-4" style="text-align:center">

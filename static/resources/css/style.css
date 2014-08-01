@@ -12,7 +12,7 @@ body {background-color:black;}
 /* Circle Avatar Styles */
 
 .circle {
-    line-height: 0;     /* remove line-height */ 
+    line-height: 0;     /* remove line-height */
     display: inline-block;  /* circle wraps image */
     margin: 5px;
   /*border: 2px solid rgba(255,255,255,0.4);*/
@@ -33,5 +33,4 @@ body {background-color:black;}
 }
 a.circle {
   color: transparent;
-} /* IE fix: removes blue border */ 
-
+} /* IE fix: removes blue border */

@@ -6,13 +6,14 @@
         "players": [
             {"position": 1,"name": "Steve J", "points": "1 (30)"},
             {"position": 2,"name": "Darren B", "points": "2 (15)"},
-            {"position": 5,"name": "Gary B", "points": "3 (6)"},
+            {"position": 3,"name": "Gary B", "points": "3 (6)"},
             {"position": 4,"name": "Darren R", "points": "4 (3)"},
-            {"position": 3,"name": "Stacey R", "points": "4 (3)"},
-            {"position": 7,"name": "Daniel R", "points": "6"},
-            {"position": 6,"name": "Frank R", "points": "6"},
-            {"position": 6,"name": "Nathan B", "points": "6"},
-            {"position": 4,"name": "Neil P", "points": "6"}
+            {"position": 5,"name": "Stacey R", "points": "4 (3)"},
+            {"position": 6,"name": "Daniel R", "points": "6 (0)"},
+            {"position": 7,"name": "Frank R", "points": "6 (0)"},
+            {"position": 8,"name": "Nathan B", "points": "6 (0)"},
+            {"position": 9,"name": "Neil P", "points": "6 (0)"},
+            {"position": 10,"name": "Craig B", "points": "7 (0)"}
         ]
     },
     {

@@ -28,30 +28,30 @@ angular.module('pkr')
         return D;
     };
 
+    me.disableLeft = function(){
+        return me.currView <= 0;
+    };
+
     me.clickLeft = function(){
         var currView = me.currView;
         currView -= 1;
-        console.log(currView);
-        if (currView === -1){currView = me.games.length - 1}
+        if (currView === -1){currView = me.games.length - 1;}
         $location.path('/placeList/' +  currView);
+    };
+
+    me.disableRight = function(){
+        return me.currView >= (me.games.length - 1);
     };
 
     me.clickRight = function(){
         var currView = me.currView;
         currView += 1;
-        if (currView === me.games.length){currView = 0}
+        if (currView === me.games.length){currView = 0;}
         $location.path('/placeList/' +  currView);
     };
 
     me.isLeague = function(game){
-        console.log(game);
-        if (game.isLeague){
-            console.log('isLeague');
-            return false;
-        } else {
-            console.log('notLeague');
-            return false;
-        }
+        return me.currView <= 0;
     }
 
   });
