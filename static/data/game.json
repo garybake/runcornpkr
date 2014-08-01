@@ -1,39 +1,55 @@
 {"games": [
     {
+        "gameid": 0,
+        "date": "20140101",
+        "isLeague": true,
+        "players": [
+            {"position": 1,"name": "Steve J", "points": "1 (30)"},
+            {"position": 2,"name": "Darren B", "points": "2 (15)"},
+            {"position": 5,"name": "Gary B", "points": "3 (6)"},
+            {"position": 4,"name": "Darren R", "points": "4 (3)"},
+            {"position": 3,"name": "Stacey R", "points": "4 (3)"},
+            {"position": 7,"name": "Daniel R", "points": "6"},
+            {"position": 6,"name": "Frank R", "points": "6"},
+            {"position": 6,"name": "Nathan B", "points": "6"},
+            {"position": 4,"name": "Neil P", "points": "6"}
+        ]
+    },
+    {
         "gameid": 3,
         "date": "20140531",
         "players": [
-            {"position": 1,"name": "Steve J", "points":10},
-            {"position": 2,"name": "Darren B", "points":6},
-            {"position": 3,"name": "Stacey R", "points":3},
-            {"position": 4,"name": "Darren R", "points":0},
-            {"position": 5,"name": "Gary B", "points":0},
-            {"position": 6,"name": "Nathan B", "points":0}
+            {"position": 1,"name": "Steve J", "points": "1 (10)"},
+            {"position": 2,"name": "Darren B", "points": "2 (6)"},
+            {"position": 3,"name": "Stacey R", "points": "3 (3)"},
+            {"position": 4,"name": "Darren R", "points": "4"},
+            {"position": 5,"name": "Gary B", "points": "5"},
+            {"position": 6,"name": "Nathan B", "points": "6"}
         ]
     },
     {
         "gameid": 2,
         "date": "20140324",
         "players": [
-            {"position": 1,"name": "Steve J", "points":10},
-            {"position": 2,"name": "Gary B", "points":6},
-            {"position": 3,"name": "Darren B", "points":3},
-            {"position": 4,"name": "Neil P", "points":0},
-            {"position": 5,"name": "Darren R", "points":0},
-            {"position": 6,"name": "Frank R", "points":0},
-            {"position": 7,"name": "Daniel R", "points":0},
-            {"position": 8,"name": "Nathan B", "points":0}
+            {"position": 1,"name": "Steve J", "points": "1 (10)"},
+            {"position": 2,"name": "Gary B", "points": "2 (6)"},
+            {"position": 3,"name": "Darren B", "points": "3 (3)"},
+            {"position": 4,"name": "Neil P", "points": "4"},
+            {"position": 5,"name": "Darren R", "points": "5"},
+            {"position": 6,"name": "Frank R", "points": "6"},
+            {"position": 7,"name": "Daniel R", "points": "7"},
+            {"position": 8,"name": "Nathan B", "points": "8"}
         ]
     },
         {
         "gameid": 1,
         "date": "20140201",
         "players": [
-            {"position": 1,"name": "Steve J", "points":10},
-            {"position": 2,"name": "Darren B", "points":6},
-            {"position": 3,"name": "Darren R", "points":3},
-            {"position": 4,"name": "Neil P", "points":0},
-            {"position": 5,"name": "Gary B", "points":0}
+            {"position": 1,"name": "Steve J", "points": "1 (10)"},
+            {"position": 2,"name": "Darren B", "points": "2 (6)"},
+            {"position": 3,"name": "Darren R", "points": "3 (3)"},
+            {"position": 4,"name": "Neil P", "points": "4"},
+            {"position": 5,"name": "Gary B", "points": "5"}
         ]
     }
 ]}

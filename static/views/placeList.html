@@ -11,6 +11,8 @@
                 </button>
             <!-- </div> -->
             {{placeList.formatDate(placeList.game.date) | date:fullDate}}
+            <!-- <p ng-show="placeList.isLeague(placeList.game)">League 2014</p>
+            <p ng-show="true">League xxx</p> -->
         </div>
         <div class="panel-body">
         </div>
@@ -18,13 +20,14 @@
         <!-- Table -->
         <table class="table">
         <tr ng-repeat="player in placeList.game.players">
-            <td class="col-md-2">{{$index + 1}}</td>
-            <td class="col-md-4">
+            <!-- <td class="col-md-2">{{$index + 1}}</td> -->
+            <td class="col-md-4" style="text-align:center">{{player.points}}</td>
+            <td class="col-md-4" style="text-align:center">
                 <a class="circle">
                     <img height="32" width="32" ng-src="{{placeList.getImage(player.name)}}" alt="face"/>
                 </a>
             </td>
-            <td class="col-md-6">{{player.name}}</td>
+            <td class="col-md-4">{{player.name}}</td>
         </tr>
         </table>
     </div>

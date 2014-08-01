@@ -43,5 +43,16 @@ angular.module('pkr')
         $location.path('/placeList/' +  currView);
     };
 
+    me.isLeague = function(game){
+        console.log(game);
+        if (game.isLeague){
+            console.log('isLeague');
+            return false;
+        } else {
+            console.log('notLeague');
+            return false;
+        }
+    }
+
   });
 })();
