@@ -16,7 +16,7 @@ angular.module('pkr')
     this.getData = function(callbackFunc) {
         $http({
             method: 'GET',
-            url: '/data/game.json',
+            url: '/data/games.json',
          }).success(function(data){
             callbackFunc(data);
         }).error(function(){

@@ -1,10 +1,11 @@
 (function(){
 
 angular.module('pkr')
-  .controller('PlaceListController', function ($scope, $routeParams, $location, gamesService) {
+  .controller('PlaceListController', function ($scope, gamesService) {
     var me = this;
+    me.currView = 0;
 
-    me.currView = parseInt($routeParams.game);
+    // me.currView = parseInt($routeParams.game);
     me.game = [];
     me.games = [];
     gamesService.getData(function(dataResponse) {
