@@ -28,12 +28,12 @@
     {"gameid":3,"position": 4,"name": "Darren R", "points": "4"},
     {"gameid":3,"position": 5,"name": "Gary B", "points": "5"},
     {"gameid":3,"position": 6,"name": "Nathan B", "points": "6"},
-    {"gameid":4,"position": 1,"name": "Steve J", "points": "10"},
-    {"gameid":4,"position": 2,"name": "Craig B", "points": "6"},
-    {"gameid":4,"position": 3,"name": "Darren B", "points": "3"},
-    {"gameid":4,"position": 4,"name": "Gary B", "points": "0"},
-    {"gameid":4,"position": 5,"name": "Darren R", "points": "0"},
-    {"gameid":4,"position": 6,"name": "Nathan B", "points": "0"}
+    {"gameid":4,"position": 1,"name": "Steve J", "points": "1 (10)"},
+    {"gameid":4,"position": 2,"name": "Craig B", "points": "2 (6)"},
+    {"gameid":4,"position": 3,"name": "Darren B", "points": "3 (3)"},
+    {"gameid":4,"position": 4,"name": "Gary B", "points": "4"},
+    {"gameid":4,"position": 5,"name": "Darren R", "points": "5"},
+    {"gameid":4,"position": 6,"name": "Nathan B", "points": "6"}
 ],
 "games":[
     {"gameid":0,"date":"20140101"},
